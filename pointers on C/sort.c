@@ -18,7 +18,7 @@ int_compare(void const *a,void const *b){
 
 /* 比较字符串 */
 int
-str_compare(void const *a,void const *b{
+str_compare(void const *a,void const *b){
 
 	return strcmp(*(char **)a,*(char **)b);
 }
