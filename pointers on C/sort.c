@@ -11,20 +11,20 @@
 /* 示例的第四个参数 */
 /* 比较整数 */
 int
-int_compare(char *a,char *b){
+int_compare(void const *a,void const *b){
 
 	return *(int *)a-*(int *)b;
 }
 
 /* 比较字符串 */
 int
-str_compare(char *a,char *b){
+str_compare(void const *a,void const *b{
 
 	return strcmp(*(char **)a,*(char **)b);
 }
 
 int
-sort(void *array,int n_ele,size_t size,int (*compare)(char*,char*)){
+sort(void *array,int n_ele,size_t size,int (*compare)(void const *,void const *)){
 
 	char temp;
 	char *ch=(char *)array;
