@@ -47,5 +47,6 @@ sort(void *array,int n_ele,size_t size,int (*compare)(void const *,void const *)
 		}
 		
 	}
+	
 	return 0;
 }
