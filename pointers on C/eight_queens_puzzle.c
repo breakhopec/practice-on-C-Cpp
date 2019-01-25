@@ -1,3 +1,8 @@
+/*
+** 八皇后问题
+** 貌似有 92 种结果??
+** 调用 call 函数输出结果
+*/
 #include<stdio.h>
 #include<string.h>
 
@@ -8,12 +13,12 @@ static char array[8][8][8]={0};
 static char res[8][8]={0};
 static int count=0;
 
-static int check_pre(int y,int z);
-static void set(int y,int x);
-static void empty(int num);
-static void emu(int z);
-static void print(void);
-static void store_res(void);
+static int check_pre(int y,int z);	/*检查已放置的皇后*/
+static void set(int y,int x);		/*设置攻击路径*/
+static void empty(int num);		/*清空一个棋盘*/
+static void emu(int z);			/*枚举*/
+static void print(void);		/*输出结果*/
+static void store_res(void);		/*储存结果*/
 
 void call(void);
 
