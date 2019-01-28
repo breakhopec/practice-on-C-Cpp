@@ -5,6 +5,32 @@
 ** 还有变量不能是字符串常量（本垃圾就因为这个折腾了一上午）
 */
 
+#include<stdio.h>
+#include<string.h>
+#include<ctype.h>
+
+void
+process_key(char *pwd){
+	
+	int len=strlen(pwd);
+	
+	for(int i=0;i<len-1;i++){
+		
+		for(int j=i+1;j<len;j++){
+			
+			if(pwd[i]==pwd[j]){
+				
+				for(int k=j;k<len;k++)
+					pwd[k]=pwd[k+1];
+				
+				len--;
+				j--;
+                         }
+                 }
+         }
+
+}
+
 int
 prepare_key(char *key){
 
@@ -16,6 +42,8 @@ prepare_key(char *key){
 		p++;
 	}
 
+	process_key(key);
+	
 	*(key+26)='\0';
 	for(char *cp=key+strlen(key),ch='A';ch<='Z';ch++){
 
