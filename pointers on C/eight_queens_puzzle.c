@@ -101,7 +101,8 @@ print(void){
 
 }
 
-void call(){
+void
+call(){
 
 	emu(0);
 }
