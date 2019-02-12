@@ -4,17 +4,18 @@
 
 #include<stdio.h>
 #include<stdlib.h>
+#define TYPENAME int
 
 struct link{
 
-	int element;
+	TYPENAME element;
 	struct link *next;
 };
 
 typedef struct link node;
 
 int
-insert(int value,node **linkp){
+insert(TYPENAME value,node **linkp){
 
 	node *current,*newnode;
 
@@ -33,7 +34,7 @@ insert(int value,node **linkp){
 }
 
 void
-deletenode(int value,node **linkp){
+deletenode(TYPENAME value,node **linkp){
 
 	node *current;
 	while((current=*linkp)!=NULL&&current->element!=value)
