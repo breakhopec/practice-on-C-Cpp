@@ -21,7 +21,7 @@ insert(int value,node **linkp){
 	while((current=*linkp)!=NULL&&current->element<value)
 		linkp=&current->next;
 
-	if((newnode=malloc(sizeof(node)))==NULL){
+	if((newnode=(node *)malloc(sizeof(node)))==NULL){
 
 		printf("Memory error\n");
 		exit(0);
