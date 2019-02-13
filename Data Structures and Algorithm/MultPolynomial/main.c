@@ -8,6 +8,8 @@
 
 #include<stdio.h>
 #include"MultPolynomial.h"
+#define POLYNOMAIAL1 3
+#define POLYNOMAIAL2 2
 
 int main(){
 
@@ -18,13 +20,13 @@ int main(){
 	int value,num;
 
 	in=fopen("input.in","r");
-	for(int i=0;i<3;i++){
+	for(int i=0;i<POLYNOMAIAL1;i++){
 
 		fscanf(in,"%d %d",&value,&num);
 		insert(value,num,&p1);
 	}
 
-	for(int i=0;i<2;i++){
+	for(int i=0;i<POLYNOMAIAL2;i++){
 
 		fscanf(in,"%d %d",&value,&num);
 		insert(value,num,&p2);
