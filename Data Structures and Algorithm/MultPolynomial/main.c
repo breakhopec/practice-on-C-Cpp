@@ -1,3 +1,11 @@
+/*
+** 这个是示例文件。计算多项式 POLYNOMAIAL1*POLYNOMAIAL2 的值
+** 输入文件为 "input.in"
+** 计算 ( 3x + 5x^3 + x^2 )( x^2 + 2x ) 的值
+** 幂与系数交替输入
+** 结果以幂的升序输出
+*/
+
 #include<stdio.h>
 #include"MultPolynomial.h"
 
