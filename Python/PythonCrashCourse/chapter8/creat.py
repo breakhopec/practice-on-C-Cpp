@@ -12,7 +12,7 @@ def make_user(first_name, last_name, **info):
 def obtain_info(user):
     print(user['first_name'] + ' ' + user['last_name'])
     for key, value in user['detail'].items():
-        print(key + ':' + value)
+        print(str(key) + ':' + str(value))
 
 def main():
     user1 = make_user('Rinka', 'Kujou', \

@@ -15,9 +15,6 @@ def main():
     car = make_car('subaru', 'outback', \
         color='blue', tow_package=True)
     print(car)
-    p = creat.make_user('Rinka', 'Kujou', \
-        username='root', password='1234567890', comment='cat')
-    creat.obtain_info(p)
 
 if __name__ == '__main__':
     main()
