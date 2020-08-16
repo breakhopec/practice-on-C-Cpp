@@ -26,3 +26,20 @@ class User(object):
                 self._increment_login_attempts()
 
         self._reset_login_attempts()
+
+
+class Admin(User):
+
+    def __init__(self, username, password):
+        super().__init__(username, password)
+        self._privileges = Privilege()
+
+class Privilege(object):
+
+    def __init__(self):
+        self._privileges = ['add post', 'del post', 'ban user']
+
+    def show_privileges(self):
+        for privilege in self._privileges:
+            print(privilege, end='  ')
+        print('')
