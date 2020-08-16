@@ -1,0 +1,5 @@
+[ Sun Aug 16 23:28:23 2020 ] kujourinka login as ADMIN successfully
+[ Sun Aug 16 23:34:47 2020 ] admin login as ADMIN successfully
+[ Sun Aug 16 23:36:02 2020 ] kujourinka login as ADMIN successfully
+[ Sun Aug 16 23:37:03 2020 ] kujourinka login as ADMIN successfully
+[ Sun Aug 16 23:42:23 2020 ] 0x7fffffff login successfully

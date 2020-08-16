@@ -1,0 +1,5 @@
+admin:123
+kujourinka:1234
+breakhopec:12345
+0x7fffffff:123456
+lee:abcd
