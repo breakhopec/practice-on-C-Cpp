@@ -40,7 +40,13 @@ class User(object):
                 return False
 
     def change_password(self):
-        pass
+        if self.login() == True:
+            while True:
+                new = input('input new password: ')
+                confirm = input('confirm it: ')
+                if new == confirm:
+                    self._auth[self.login_username] = confirm
+                    #self._write_back()
 
     def _guest_regist(self, status):
         with open('log.txt', 'a') as file_objects:
@@ -57,6 +63,8 @@ class User(object):
 class Admin(User):
 
     def __init__(self):
+        super().__init__('user.txt')
+        self._userlist = self._auth
         super().__init__('admin.txt')
 
     def _guest_regist(self, status):
@@ -85,6 +93,9 @@ class Admin(User):
 
                 self._admin_operation('add a user ' + self._new_username)
                 print('add new user successfully')
+
+    def delete_user(self):
+        pass
     
     def _admin_operation(self, operation):
         with open('admin_operation.txt', 'a') as file_objects:
@@ -92,4 +103,8 @@ class Admin(User):
             file_objects.write('%s: %s\n' % (self.login_username, operation))
 
     def _is_name_used(self, name):
-        return False
+        if name in self._userlist.keys():
+            print('this username exists')
+            return True
+        else:
+            return False

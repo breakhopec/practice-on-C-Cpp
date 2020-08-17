@@ -4,4 +4,5 @@
 [ Sun Aug 16 23:20:41 2020 ] kujourinka: clean log
 [ Sun Aug 16 23:23:00 2020 ] admin: clean log
 [ Sun Aug 16 23:36:10 2020 ] kujourinka: add a user lee
-[ Sun Aug 16 23:37:12 2020 ] kujourinka: add a user lee
+[ Mon Aug 17 10:25:17 2020 ] kujourinka: add a user chin
+[ Mon Aug 17 10:26:59 2020 ] admin: add a user yamada

@@ -3,3 +3,11 @@
 [ Sun Aug 16 23:36:02 2020 ] kujourinka login as ADMIN successfully
 [ Sun Aug 16 23:37:03 2020 ] kujourinka login as ADMIN successfully
 [ Sun Aug 16 23:42:23 2020 ] 0x7fffffff login successfully
+[ Mon Aug 17 09:56:16 2020 ] admin login as ADMIN successfully
+[ Mon Aug 17 09:57:59 2020 ] admin login as ADMIN successfully
+[ Mon Aug 17 09:59:11 2020 ] admin login as ADMIN successfully
+[ Mon Aug 17 10:05:27 2020 ] admin login as ADMIN successfully
+[ Mon Aug 17 10:24:43 2020 ] kujourinka login as ADMIN successfully
+[ Mon Aug 17 10:25:02 2020 ] kujourinka login as ADMIN successfully
+[ Mon Aug 17 10:25:55 2020 ] chin login successfully
+[ Mon Aug 17 10:26:36 2020 ] admin login as ADMIN successfully
