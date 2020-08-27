@@ -1,12 +1,5 @@
-import copy
+def print_args(*args):
+    print(args)
+    print(*args)
 
-dic = {
-    'name': 'KujouRinka',
-    'age': 18,
-    'gender': 'cat',
-    'address': 'Earth',
-    'detail': ['1234567890', 'lwx']
-}
-
-dic2 = {}
-print(fromkeys(['a', 'b']))
+print_args(1, 2, 3, 4)
