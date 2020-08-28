@@ -16,7 +16,11 @@ class Rectangle(object):
         if name == 'size':
             return self._width, self._height
         else:
-            return self.__dict__[name]
+            return None
+
+    def __getattribute__(self, name):
+        #do something here before access value
+        return super().__getattribute__(name)
 
 a = Rectangle()
 a.size = 2, 4
