@@ -26,9 +26,9 @@ def print_res():
     for x in range(num):
         for i in range(num):
             if i  == queen[x]:
-                print('X', end='')
+                print('■ ', end='')
             else:
-                print('o', end='')
+                print('□ ', end='')
         print()
     print()
 
