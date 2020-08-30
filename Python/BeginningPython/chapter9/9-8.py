@@ -4,7 +4,6 @@
 
 num = int(input('input the number of queens: '))
 queen = [None] * num
-#queen = [0, 2, 4, None ,None]
 count = 0
 
 def set_position(x, y):
