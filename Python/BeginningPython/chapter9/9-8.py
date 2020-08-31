@@ -36,7 +36,7 @@ def reset():
     '输出结果后清空列表'
     queen = [None] * num
     
-def place(x, checkerboard):
+def place(x, checkerboard=False):
     '开始回溯'
     if x == num:
         global count
