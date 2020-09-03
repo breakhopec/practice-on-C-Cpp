@@ -1,0 +1,11 @@
+{
+    "name": "Win32",
+    "includePath": [
+        "F:\\mingw64\\include\\*",
+        "F:\\mingw64\\include\\*"
+    ],
+    "browse": {
+        "limitSymbolsToIncludedHeaders": true,
+        "databaseFilename": ""
+    }
+}
