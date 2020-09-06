@@ -1,4 +1,5 @@
 import socket
+import time
 server = socket.socket()
 
 host = socket.gethostname()
@@ -9,6 +10,7 @@ server.listen(2)
 while True:
     try:
         client, client_addr = server.accept()
+        print('[{}] '.format(time.asctime(time.localtime())), end='')
         print('Got connection from: {}'.format(client_addr))
         client.send(b'thanks for you connection')
         client.send(b'are you Rinka? (Y/n)')
