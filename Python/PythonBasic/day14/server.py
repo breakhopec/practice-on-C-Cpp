@@ -17,13 +17,13 @@ pack['filename'] = 'unravel.mp4'
 pack['file'] = data
 json_str = dumps(pack)
 
-try:
-    while True:
+while True:
+    try:
         client, client_addr = server.accept()
         client.send('transfering video...'.encode('utf-8'))
         client.send(json_str.encode('utf-8'))
-except ConnectionResetError:
-    pass
-finally:
-    if client:
-        client.close()
+    except:
+        pass
+    finally:
+        if client:
+            client.close()

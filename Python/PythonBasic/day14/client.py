@@ -10,7 +10,6 @@ client.connect((host, port))
 
 print(client.recv(1024).decode('utf-8'))
 
-data_recv = bytes()
 data = bytes()
 
 while True:
@@ -20,3 +19,5 @@ while True:
     data += data_recv
 
 pack = loads(data.decode('utf-8'))
+with open('recv_' + pack['filename'], 'wb') as file_object:
+    file_object.write(b64decode(pack['file']))
