@@ -1,0 +1,8 @@
+Image Name                   PID Session Name     Session#    Mem Usage
+========================= ====== ================ ======== ============
+System Idle Process            0 Console                 0         28 K
+System                         4 Console                 0        240 K
+smss.exe                     708 Console                 0        420 K
+csrss.exe                    764 Console                 0      4,876 K
+winlogon.exe                 788 Console                 0      3,268 K
+services.exe                 836 Console                 0      3,932 K
